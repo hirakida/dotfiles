@@ -11,6 +11,7 @@ setopt share_history
 
 setopt auto_pushd
 setopt correct
+setopt auto_cd
 
 # prompt
 PROMPT='$ '
