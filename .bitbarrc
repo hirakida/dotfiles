@@ -1,2 +1,13 @@
 [weather]
 city = 400010
+
+[line-notify]
+access-token = xxxxxxxxxx
+
+[fixer]
+access_key = xxxxxxxxxx
+top = JPY
+base = USD
+
+[1forge]
+api_key = xxxxxxxxxx
