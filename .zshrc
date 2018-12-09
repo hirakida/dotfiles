@@ -29,4 +29,3 @@ fi
 
 [[ -s $HOME/.gvm/scripts/gvm ]] && . $HOME/.gvm/scripts/gvm
 [[ -s $SDKMAN_DIR/bin/sdkman-init.sh ]] && . $SDKMAN_DIR/bin/sdkman-init.sh
-[[ -s $HOME/.config/yarn/global/node_modules/tabtab/.completions/jhipster.zsh ]] && . $HOME/.config/yarn/global/node_modules/tabtab/.completions/jhipster.zsh
