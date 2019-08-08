@@ -37,4 +37,6 @@ alias psmem='ps Av'
 [[ -s $HOME/.gvm/scripts/gvm ]] && . $HOME/.gvm/scripts/gvm
 [[ -s $SDKMAN_DIR/bin/sdkman-init.sh ]] && . $SDKMAN_DIR/bin/sdkman-init.sh
 
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
 eval "$(direnv hook zsh)"
