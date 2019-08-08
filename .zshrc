@@ -33,10 +33,7 @@ alias historyall='history 1'
 alias pscpu='ps Au'
 alias psmem='ps Av'
 
-if [[ -f $HOME/.zsh_secrets ]]; then
-  . $HOME/.zsh_secrets
-fi
-
+[[ -s $HOME/.zsh_secret ]] && . $HOME/.zsh_secret
 [[ -s $HOME/.gvm/scripts/gvm ]] && . $HOME/.gvm/scripts/gvm
 [[ -s $SDKMAN_DIR/bin/sdkman-init.sh ]] && . $SDKMAN_DIR/bin/sdkman-init.sh
 
