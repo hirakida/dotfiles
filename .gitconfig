@@ -1,0 +1,10 @@
+[user]
+    name = hirakida
+    email = 12070156+hirakida@users.noreply.github.com
+[core]
+    excludesfile = ~/.gitignore_global
+    autocrlf = input
+[color]
+    ui = true
+[commit]
+    template = ~/.stCommitMsg
