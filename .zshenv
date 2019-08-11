@@ -1,5 +1,3 @@
-export ZDOTDIR=$HOME
-
 path=(
 #    $GOPATH/bin(N-/)
     $HOME/.nodebrew/current/bin(N-/)
@@ -7,6 +5,16 @@ path=(
     $path
 )
 
-export EDITOR=vim
-export SVN_EDITOR=vim
+# dir
+export ZDOTDIR=$HOME
 export SDKMAN_DIR=$HOME/.sdkman
+
+# editor
+export EDITOR=vim
+export SVN_EDITOR=$EDITOR
+export GIT_EDITOR=$EDITOR
+
+# history
+export HISTFILE=$HOME/.zsh_history
+export HISTSIZE=10000
+export SAVEHIST=10000
