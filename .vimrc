@@ -4,35 +4,34 @@ colorscheme molokai
 set encoding=utf-8
 set number
 set ruler
-set noswapfile
-set smartindent
-set showmatch
-set matchtime=1
-set showmode
-set display=lastline
-
-" list
-set list
-"set listchars=tab:>-,trail:-,eol:$
-
-" cursor
 set cursorline
 set cursorcolumn
+set list
+set display=lastline
 
-" status line
+set noswapfile
+
+set showmatch
+set matchtime=1
+
+" last line
 set laststatus=2
+set showcmd
+set showmode
 
-" tab
+" tab, indent
 set expandtab
 set tabstop=4
 set shiftwidth=4
+set autoindent
+set smartindent
 
 " search
 set incsearch
-set wrapscan
+set hlsearch
 set ignorecase
 set smartcase
-set hlsearch
+set wrapscan
 
 " wild
 set wildmenu
