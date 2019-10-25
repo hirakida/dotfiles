@@ -29,6 +29,16 @@ alias ....='cd ../../..'
 alias historyall='history 1'
 alias pscpu='ps Au'
 alias psmem='ps Av'
+alias timestamp='date +%s'
+
+# function
+ttod() {
+    date -r $1
+}
+
+tmtod() {
+    date -r $(($1 / 1000))
+}
 
 [[ -s $HOME/.zsh_secret ]] && . $HOME/.zsh_secret
 [[ -s $HOME/.gvm/scripts/gvm ]] && . $HOME/.gvm/scripts/gvm
