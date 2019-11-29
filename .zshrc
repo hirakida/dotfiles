@@ -33,12 +33,18 @@ alias psmem='ps Av'
 alias timestamp='date +%s'
 
 # function
+# timestamp to date
 ttod() {
     date -r $1
 }
 
+# timestamp milliseconds to date
 tmtod() {
     date -r $(($1 / 1000))
+}
+
+brewfile() {
+    brew bundle dump --force --file=.Brewfile
 }
 
 [[ -s $HOME/.zsh_secret ]] && . $HOME/.zsh_secret
