@@ -32,26 +32,12 @@ alias pscpu='ps Au'
 alias psmem='ps Av'
 alias timestamp='date +%s'
 
-# function
-# timestamp to date
-ttod() {
-    date -r $1
-}
-
-# timestamp milliseconds to date
-tmtod() {
-    date -r $(($1 / 1000))
-}
-
-brewfile() {
-    brew bundle dump --force --file=.Brewfile
-}
-
-[[ -s $HOME/.zsh_secret ]] && . $HOME/.zsh_secret
-[[ -s $HOME/.gvm/scripts/gvm ]] && . $HOME/.gvm/scripts/gvm
-[[ -s $SDKMAN_DIR/bin/sdkman-init.sh ]] && . $SDKMAN_DIR/bin/sdkman-init.sh
+source $HOME/.zsh_secret
+source $HOME/.zsh_functions
 
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source <(kubectl completion zsh)
+[[ -s $SDKMAN_DIR/bin/sdkman-init.sh ]] && source $SDKMAN_DIR/bin/sdkman-init.sh
+[[ -s $HOME/.gvm/scripts/gvm ]] && source $HOME/.gvm/scripts/gvm
 
 eval "$(direnv hook zsh)"
