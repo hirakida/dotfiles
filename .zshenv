@@ -1,6 +1,7 @@
 path=(
 #    $GOPATH/bin(N-/)
     $HOME/.nodebrew/current/bin(N-/)
+    $HOME/.nimble/bin
     /usr/local/opt/mysql@5.7/bin(N-/)
     /System/Library/Frameworks/JavaScriptCore.framework/Versions/Current/Resources/jsc
     $path
