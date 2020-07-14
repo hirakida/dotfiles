@@ -32,8 +32,8 @@ alias pscpu='ps Au'
 alias psmem='ps Av'
 alias timestamp='date +%s'
 
-source $HOME/.zsh_secret
-source $HOME/.zsh_functions
+source $ZDOTDIR/.zsecret
+source $ZDOTDIR/.zfunctions
 
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source <(kubectl completion zsh)
