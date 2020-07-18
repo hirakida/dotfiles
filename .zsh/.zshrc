@@ -31,6 +31,8 @@ alias historyall='history 1'
 alias pscpu='ps Au'
 alias psmem='ps Av'
 alias timestamp='date +%s'
+alias brewbundle='brew bundle --global'
+alias brewbundledump='brew bundle dump --global --force'
 
 source $ZDOTDIR/.zsecret
 source $ZDOTDIR/.zfunctions

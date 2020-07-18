@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DOT_FILES=(.zshenv .vimrc .gitignore_global)
+DOT_FILES=(.zshenv .vimrc .gitignore_global .Brewfile)
 for file in "${DOT_FILES[@]}"; do
   ln -fs "${PWD}/${file}" "${HOME}/${file}"
 done
@@ -10,6 +10,3 @@ ZSH_DOT_FILES=(.zshenv .zshrc .zfunctions)
 for file in "${ZSH_DOT_FILES[@]}"; do
   ln -fs "${PWD}/.zsh/${file}" "${HOME}/.zsh/${file}"
 done
-
-cp .Brewfile "${HOME}/.Brewfile"
-brew bundle --global

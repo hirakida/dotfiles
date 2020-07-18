@@ -8,10 +8,6 @@ tmtod() {
     date -r $(($1 / 1000)) +"%Y-%m-%d %H:%M:%S"
 }
 
-dump_brewfile() {
-    brew bundle dump --force --file=.Brewfile
-}
-
 finder_show_all_files_true() {
     defaults write com.apple.finder AppleShowAllFiles TRUE
     killall Finder
