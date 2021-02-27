@@ -7,6 +7,8 @@ path=(
     $path
 )
 
+fpath=($HOME/.zsh/functions $fpath)
+
 # dir
 export SDKMAN_DIR=$HOME/.sdkman
 

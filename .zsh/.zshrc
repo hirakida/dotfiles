@@ -14,8 +14,14 @@ setopt hist_expand
 #setopt extended_history
 
 # prompt
-PROMPT='%# '
+setopt prompt_subst
+PROMPT='$(__git_ps1 " (%s)")%# '
 RPROMPT='%d'
+
+GIT_PS1_SHOWDIRTYSTATE=1
+GIT_PS1_SHOWUPSTREAM=auto
+GIT_PS1_SHOWUNTRACKEDFILES=1
+GIT_PS1_SHOWSTASHSTATE=1
 
 # bindkey
 bindkey -e
@@ -36,6 +42,9 @@ alias brewbundledump='brew bundle dump --global --force'
 
 source $ZDOTDIR/.zsecret
 source $ZDOTDIR/.zfunctions
+
+zstyle ':completion:*:*:git:*' script $HOME/.git-completion.bash
+source $HOME/.git-prompt.sh
 
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source <(kubectl completion zsh)
