@@ -6,6 +6,7 @@ path=(
     /System/Library/Frameworks/JavaScriptCore.framework/Versions/Current/Resources/jsc
     $path
 )
+typeset -U PATH
 
 fpath=($HOME/.zsh/functions $fpath)
 

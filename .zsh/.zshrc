@@ -36,12 +36,24 @@ alias ....='cd ../../..'
 alias historyall='history 1'
 alias pscpu='ps Au'
 alias psmem='ps Av'
-alias timestamp='date +%s'
 alias brewbundle='brew bundle --global'
 alias brewbundledump='brew bundle dump --global --force'
 
+# functions
+timestamp() { date +%s }
+ttod() { date -r $1 +"%Y-%m-%d %H:%M:%S" }
+tmtod() { date -r $(($1 / 1000)) +"%Y-%m-%d %H:%M:%S" }
+
+finder_show_all_files() {
+    if [ $# -ne 0 ] && [ $1 = 1 ]; then
+        defaults write com.apple.finder AppleShowAllFiles TRUE
+    else
+        defaults write com.apple.finder AppleShowAllFiles FALSE
+    fi
+    killall Finder
+}
+
 source $ZDOTDIR/.zsecret
-source $ZDOTDIR/.zfunctions
 
 zstyle ':completion:*:*:git:*' script $HOME/.git-completion.bash
 source $HOME/.git-prompt.sh

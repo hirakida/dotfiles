@@ -6,7 +6,7 @@ for file in "${DOT_FILES[@]}"; do
 done
 
 mkdir -p "${HOME}/.zsh/functions"
-ZSH_DOT_FILES=(.zshenv .zshrc .zfunctions)
+ZSH_DOT_FILES=(.zshenv .zshrc)
 for file in "${ZSH_DOT_FILES[@]}"; do
   ln -fs "${PWD}/.zsh/${file}" "${HOME}/.zsh/${file}"
 done
