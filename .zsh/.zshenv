@@ -3,10 +3,11 @@ path=(
     $HOME/.nodebrew/current/bin(N-/)
     $HOME/.nimble/bin
     /usr/local/opt/mysql@5.7/bin(N-/)
-    /System/Library/Frameworks/JavaScriptCore.framework/Versions/Current/Resources/jsc
     $path
 )
 typeset -U PATH
+
+ln -fs /System/Library/Frameworks/JavaScriptCore.framework/Versions/A/Helpers/jsc /usr/local/bin
 
 fpath=($HOME/.zsh/functions $fpath)
 
