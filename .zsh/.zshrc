@@ -64,3 +64,4 @@ source <(kubectl completion zsh)
 [[ -s $HOME/.gvm/scripts/gvm ]] && source $HOME/.gvm/scripts/gvm
 
 eval "$(direnv hook zsh)"
+eval "$(rbenv init -)"
