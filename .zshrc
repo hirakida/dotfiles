@@ -53,12 +53,11 @@ finder_show_all_files() {
     killall Finder
 }
 
-source $ZDOTDIR/.zsecret
+source $HOME/.zsh/.zsecret
 
 zstyle ':completion:*:*:git:*' script $HOME/.git-completion.bash
 source $HOME/.git-prompt.sh
-
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source <(kubectl completion zsh)
 [[ -s $SDKMAN_DIR/bin/sdkman-init.sh ]] && source $SDKMAN_DIR/bin/sdkman-init.sh
 [[ -s $HOME/.gvm/scripts/gvm ]] && source $HOME/.gvm/scripts/gvm
