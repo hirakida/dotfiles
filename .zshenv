@@ -9,6 +9,9 @@ typeset -U PATH
 
 fpath=($HOME/.zsh/functions $fpath)
 
+# dir
+export SDKMAN_DIR=$HOME/.sdkman
+
 # editor
 export EDITOR=vim
 export GIT_EDITOR=$EDITOR
