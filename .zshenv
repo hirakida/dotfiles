@@ -1,6 +1,8 @@
 path=(
 #    $GOPATH/bin(N-/)
     $HOME/.nodebrew/current/bin(N-/)
+    $HOME/.pyenv/bin
+    $HOME/.local/bin
     $HOME/.nimble/bin
     /opt/homebrew/opt/mysql-client/bin
     $path
